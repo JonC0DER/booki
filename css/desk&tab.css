@@ -1,0 +1,177 @@
+@media screen and (min-width: 768px) {
+    header{
+        width: 100%;
+        height:100px;
+    }
+    header div.fixed_header{
+        width: 100%;
+    }
+    header div.fixed_header,
+    ul.header{
+        justify-content: space-between;
+    }
+    p.header_logo{
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 80px;
+        height:50px;
+    }
+    p.header_logo > img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: inherit;
+    }
+    ul.header{
+        height:min-content;
+        width: 250px;
+    }
+    li.header{
+        text-align: center;
+        width: 120px;
+        padding-top: 35px;
+        border-top: 1px solid white;
+    }
+    li.header:hover {
+        border-top: 1px solid #0065fc;
+    }
+    /*++++++++++++++++++++++++++ search Desktop+Tablette +++++++*/
+    div.navigation_form{
+        width: 350px;
+        height: 50px;
+        border: 1px solid #f2f2f2;
+        border-radius: 10px;
+        overflow: hidden;
+        justify-content: stretch;
+        align-items: stretch;
+    }
+    
+    span.icon_half_circle{
+        flex: 15%;
+    }
+    div.navigation_form input{
+        padding: 10px;
+        flex: 55%;
+        transition: 0.5s;
+    }
+    div.navigation_form input:focus{
+        box-shadow: 0px 0px 5px #0065fc inset;
+    }
+    
+    button.search{
+        flex:30%;
+        font-size: 15px;
+    }
+    button.search i{
+        display:none;
+    }
+
+    /*++++++++++++++++++++++++++++++++++++++  filtres +++++*/
+    nav.filtres{
+        align-items: baseline;
+    }
+    /*+++++++++++++++++++++++++++++++++++++++++++*/
+    section.heb_pop{
+        height: fit-content;
+    }
+    div#hebergements,
+    div#populaires{
+        height: 100%;
+    }
+    ul.populaires{
+        justify-content: space-around;
+    }
+    ul.populaires div.card{
+        min-width: 230px;
+        height:150px;
+    }   
+    ul.populaires div.card_txt{
+        height: 100%;
+        width: 60%;
+        padding: 15px 15px 15px 8px;
+    }
+    ul.populaires div.card_txt span{
+        height: 15px;
+    }
+
+    ul.populaires div.card picture{
+        height:100%;
+        width:40%;
+    }
+    /*++++++++++++++++++++++++ galleries hebergement +++++*/
+    ul.hebergement{
+        height:90%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    ul.hebergement li{
+        min-width:220px;
+        margin-top:5%;
+        width:25%;
+        margin: 5px;
+    }
+
+    ul.hebergement div.card_txt,
+    div.activites div.card_txt{
+        padding: 8px 15px 15px 15px;
+    }
+    ul.hebergement div.card > picture{
+        width: 100%;
+        height:60%;
+    }
+    /*++++++++++++++++++++++++ Activites ++++*/
+    section#activites{
+        margin-top: 20px;
+    }
+    div.activites >div.card {
+        margin:25px;
+    }
+    div.activites div.card{
+        height:100%;
+        padding: 0;
+        flex-direction:column;
+    }
+    div.activites > div.card ,
+    div.activites > div.container_card{
+        max-height:500px;
+    }
+    div.activites > div.container_card {
+        justify-content: space-between;
+        margin:25px;
+    }
+    div.activites > div{
+        width:50%;
+    }
+    /*+++ PB height div */
+    div.activites > div.container_card {
+        flex-direction:column;
+        height:100%;
+    }
+    /*+++++++++++++++++++++++++++++++++*/
+    div.container_card > div.card{
+        height:45%;
+    }
+    div.container_card > div.card:nth-child(1){
+        margin-bottom: 10%;
+    }
+    div.activites div.card picture{
+        width:100%;
+    }
+    div.activites > div.card picture{
+        height:90%;
+    }
+    div.container_card > div.card > picture{
+        height:80%;
+    }
+    div.container_card div.card_txt{
+        height:20%;
+    }
+    /*+++++++++++++++++++++++++++++ footer +++++++++++++*/
+    footer{
+        margin-top: 20px;
+    }
+    div.container_footer>div{
+        padding:20px;
+        margin-right: 12%;
+        width: fit-content;
+    }
+}

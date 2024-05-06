@@ -1,0 +1,63 @@
+@media screen and (min-width: 992px) {
+    :root{
+        max-width:1600px;
+    }
+    
+    section.heb_pop{
+        align-items: stretch;
+    }
+
+    section.navigation, section.heb_pop,
+    section#activites {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    div#hebergements,
+    div#populaires{
+        border-radius: 25px / 25px;
+        padding: 30px;
+    }
+    div#hebergements{
+        margin-right: 2%;
+        flex-grow:8;
+    }
+    div#populaires{
+        flex-grow:2;
+    }
+
+    ul.hebergement{
+        margin-top:5px;
+        margin-bottom: 5px;
+    }
+    ul.hebergement li{
+        margin:1.6%;
+    }
+    /*++++++++++++++++++++++++ galleries populaires +++++*/
+    ul.populaires div.card_txt > *,
+    ul.hebergement div.card_txt > *{
+        font-size: 88%;
+        line-height: 150%;   
+    }
+    ul.populaires{
+        flex-direction:column;
+        justify-content: space-around;
+        height:100%;
+        margin-top: 10px;
+    }
+    ul.populaires li{
+        width:100%;
+        margin:2%;
+    }
+    /*++++++++++++++++++++++++ Activites ++++*/
+    section#activites{
+        height: 600px;
+    }
+    div.container_activites{
+        flex-wrap: wrap;
+        height:100%;
+    }
+    div.activites{
+        flex:50%;
+        height:90%;
+    }
+}

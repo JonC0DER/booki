@@ -1,0 +1,50 @@
+@media screen and (min-width: 768px) and (max-width:991px){
+    section.navigation, section.heb_pop,
+    section#activites {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    div#hebergements,
+    div#populaires{
+        padding:  5px;
+        border-radius: 15px / 15px;
+    }
+    section.heb_pop{
+        flex-direction: column-reverse;
+    }
+    div#populaires{
+        margin-bottom: 40px;
+    }
+    ul.populaires div.card_txt > *, footer,
+    ul.hebergement div.card_txt > *{
+        font-size: 85%;
+        line-height: 140%;   
+    }
+    ul.populaires{
+        flex-wrap: wrap;
+    }
+    ul.populaires li{
+        min-width: 220px;
+        width:30%;
+    }
+    ul.populaires div.card{
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    ul.hebergement{
+        margin-top:5px;
+    }
+    
+    /*++++++++++++++++++++++++ Activites ++++*/
+    div.container_activites{
+        height: fit-content;
+        flex-direction: column;
+    }
+    div.activites{
+        height: 600px;
+    }
+    /*+++++++++++++++++++++++++++++ footer +++++++++++++*/
+    div.container_footer>div{
+        margin-right:  8%;
+    }
+}

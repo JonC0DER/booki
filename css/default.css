@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+header div.fixed_header, ul.header, p.header_logo, div.navigation_form,
+nav.filtres, ul.filtres, li.filtres>a,
+section.heb_pop, ul.hebergement, ul.populaires, div.pop_first_line,
+div.container_activites, div.card, div.container_card,
+div.activites, div.container_footer{
+    display:flex;
+}
+:root{
+    margin: auto;
+}
+header div.fixed_header{
+    flex-wrap: wrap;
+}
+section.navigation, section.heb_pop,
+section#activites {
+    width:100%;
+}
+section.navigation{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+div#populaires, div#hebergements,
+span.icon_half_circle, footer{
+    background-color: #f1f2f2;
+}
+img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+p.header_logo{
+    height: auto;
+    justify-content: center;
+}
+
+/*+++++++++++++++++++++++++++++++++++++ text style +++++++++*/
+h1{
+    font-weight:bold;
+    line-height: 30px;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*+++++++++++++++++++++++++++++++++++++ text color +++++++++*/
+
+li.header:hover > a,i.info,
+ul.hebergement i, ul.populaires i{
+    color:#0065fc;
+}
+
+section.navigation{
+    height: fit-content;
+    padding-top: 5px ;
+    padding-bottom: 10px;
+}
+section.navigation > *{
+    margin-top:15px;
+}
+
+span.icon_half_circle,
+span.icon_circle,
+span.info_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*++++++++++++++++++++++++++++++++++++++  filtres icon_circle +++++*/
+span.icon_circle{
+    width: 35px;
+    height: 35px;
+    padding: 25px;
+    background-color: #deebff;
+    border-radius: 100%;
+    color:#0065fc;
+}
+/*+++++++++++++++++++++++++++++++++ search nav ++++++*/
+    div.navigation_form input{
+        outline: none;
+    }
+    span.icon_half_circle,
+    div.navigation_form input,
+    button.search{
+        border:none;
+    }
+    span.icon_half_circle,
+    button.search{
+        vertical-align: middle;
+    }   
+    button.search:hover{
+        cursor: pointer;
+    }
+    button.search{
+        color:white;
+        font-weight: bold;
+        background-color: #0065fc;
+    }
+/*++++++++++++++++++++++++++++++++++++++  filtres li +++++*/
+nav.filtres{
+    height: fit-content;
+}
+ul.filtres{
+    justify-content: start;
+    flex-wrap: wrap;
+}
+li.filtres{
+    border:3px solid #f2f2f2;
+    border-radius: 50px / 90% ;
+    width:fit-content;
+    margin: 5px 10px 5px 10px;
+    transition: all .2s ease-in-out;
+}
+li.filtres:hover{
+    transform: scale(1.1);
+}
+li.filtres>a{
+    padding:0px;
+    align-items:center;
+    font-weight: bold;
+}
+span.icon_circle_txt{
+    padding: 0 15px 0 15px;
+}
+
+    p.info_filtres{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+/*+++++++++++++++++++++++++++++++++++++ info +++++++++*/
+span.info_icon{
+    border-radius: 100%;
+    border:1px solid #f2f2f2;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++*/
+div.pop_first_line{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+div.pop_first_line i{
+    font-size: 30px;
+}
+/*++++++++++++++++++++++++ galleries card +++++*/
+div.card{
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);
+}
+ul.populaires div.card picture {
+    height:100%;
+    flex-basis: 40%;
+    flex-shrink: 0;
+}
+ul.populaires div.card_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    ul.populaires div.card picture img{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius:15px;
+    }
+    ul.hebergement div.card picture img,
+    div.activites div.card picture img{
+        border-top-left-radius: 15px;
+        border-top-right-radius:15px;
+    }
+    ul.hebergement div.card{
+        height:200px;
+        min-width: 200px;
+        flex-direction:column;
+        align-content: flex-start;
+    }
+
+    div.nav_footer > h3{
+        line-height: 50px;
+        margin-top: 30px;
+    }
+    ul.nav_footer li a{
+        line-height: 30px;
+    }
